@@ -50,25 +50,27 @@ pen.hideturtle()
 pen.goto(0, 260)
 pen.write("Player A: 0  Player B: 0", align="center", font=("Courier", 24, "normal"))
 
+PADDLE_SPEED = 30
+
 # Functions
 def paddle_a_up():
     y = paddle_a.ycor()
-    y += 20
+    y += PADDLE_SPEED
     paddle_a.sety(y)
 
 def paddle_a_down():
     y = paddle_a.ycor()
-    y -= 20
+    y -= PADDLE_SPEED
     paddle_a.sety(y)
 
 def paddle_b_up():
     y = paddle_b.ycor()
-    y += 20
+    y += PADDLE_SPEED
     paddle_b.sety(y)
 
 def paddle_b_down():
     y = paddle_b.ycor()
-    y -= 20
+    y -= PADDLE_SPEED
     paddle_b.sety(y)
 
 # Keyboard bindings
